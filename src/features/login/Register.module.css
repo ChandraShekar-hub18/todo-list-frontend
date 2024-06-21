@@ -1,0 +1,13 @@
+.signUpBtn {
+  width: 100%;
+  border-radius: 5px;
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  background-color: var(--secondary-color);
+  border: none;
+}
+
+.signUpLink {
+  text-decoration: none;
+  color: white;
+}

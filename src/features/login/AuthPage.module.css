@@ -1,0 +1,25 @@
+.title {
+  font-size: 2.5rem;
+  font-weight: 600;
+  color: #c94d42;
+  text-decoration: none;
+  cursor: pointer;
+  user-select: none;
+}
+.loginImage {
+  display: block;
+  width: 40rem;
+  @media (max-width: 1000px) {
+    display: none;
+  }
+}
+
+.loginContainer {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  @media (max-width: 1000px) {
+    margin: 12rem auto;
+    justify-content: center;
+  }
+}

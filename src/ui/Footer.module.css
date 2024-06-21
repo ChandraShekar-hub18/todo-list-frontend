@@ -1,0 +1,6 @@
+.container {
+  display: flex;
+  flex-basis: auto;
+  justify-content: space-between;
+  margin: 2rem;
+}
