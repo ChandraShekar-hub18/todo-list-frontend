@@ -2,11 +2,8 @@ import styles from "./Footer.module.css";
 
 export const Footer: React.FC = () => {
   return (
-    <>
-      <div className={styles.container}>
-        <div>menu</div>
-        <div>search</div>
-      </div>
-    </>
+    <footer className={styles.container}>
+      <p>Made with ❤ by Chandra shekar</p>
+    </footer>
   );
 };

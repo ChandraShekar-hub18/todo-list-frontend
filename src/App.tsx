@@ -1,12 +1,12 @@
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import { AuthProvider } from "./context/AuthContext";
 import { Home } from "./pages/Home";
-import { Login } from "./features/login/Login.tsx";
+import { Login } from "./components/login/Login.tsx";
 import PrivateRoute from "./PrivateRoute.tsx";
-import { TodoList } from "./features/todo/TodoList.tsx";
+import { TodoList } from "./components/todo/TodoList.tsx";
 import { PageNotFound } from "./pages/PageNotFound.tsx";
-import { Register } from "./features/login/Register.tsx";
-import { AuthPage } from "./features/login/AuthPage.tsx";
+import { Register } from "./components/login/Register.tsx";
+import { AuthPage } from "./components/login/AuthPage.tsx";
 
 export const App: React.FC = () => {
   return (

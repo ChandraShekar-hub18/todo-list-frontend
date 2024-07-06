@@ -1,0 +1,29 @@
+.container {
+  height: 45rem;
+  display: grid;
+  background-color: rgb(255, 228, 196);
+}
+
+.projectSection {
+  padding: 2rem;
+  display: flex;
+  height: 35rem;
+  overflow-y: scroll;
+  flex-direction: column;
+  justify-content: start;
+  margin: auto;
+  width: 40rem;
+  @media (max-width: 800px) {
+    width: auto;
+  }
+}
+
+.add {
+  border-radius: 10px;
+  padding: 0.8rem 0.4rem;
+  border: none;
+  color: rgb(253, 245, 245);
+  font-weight: 700;
+  font-size: 1.4rem;
+  background-color: rgb(255, 153, 58);
+}
