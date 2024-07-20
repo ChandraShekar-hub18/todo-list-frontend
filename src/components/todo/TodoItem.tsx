@@ -32,12 +32,17 @@ export const TodoItem: React.FC<{ todo: todo }> = ({ todo }) => {
   }
 
   return (
-    <div className={styles.container}>
+    <div
+      className={`${styles.container} ${
+        todo.completed ? styles.completed : ""
+      }`}
+    >
       <div>
         <ul>
-          <li>{todo.title}</li>
-          <li>{todo.description}</li>
+          <li className={styles.title}>{todo.title}</li>
+          <li className={styles.description}>{todo.description}</li>
         </ul>
+        {}
       </div>
       <MdDelete
         size={23}

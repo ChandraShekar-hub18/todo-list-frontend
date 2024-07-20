@@ -16,3 +16,21 @@
   scale: 1.2;
   cursor: pointer;
 }
+
+ul {
+  display: inline-block;
+}
+
+.title {
+  font-weight: 600;
+}
+
+.description {
+  font-weight: 300;
+  font-size: small;
+  margin-top: 0.5rem;
+}
+
+.completed {
+  background-color: #dfd3c3;
+}

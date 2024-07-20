@@ -126,7 +126,10 @@ export const deleteTodo = createAsyncThunk(
 // Thunk for adding a Todo
 export const addTodo = createAsyncThunk("todos/addTodo", async (todo) => {
   const response = await createTodo(todo);
-  return response;
+  console.log(response);
+  if (response.status === 201) {
+    return todo;
+  } else return response;
 });
 
 const todoSlice = createSlice({
@@ -166,7 +169,8 @@ const todoSlice = createSlice({
         state.error = null;
       })
       .addCase(addTodo.fulfilled, (state, action) => {
-        state.todos.todos = state.todos.todos.push(action.payload);
+        console.log(action.payload);
+        state.todos.todos = [...state.todos.todos, action.payload];
         state.loading = false;
         state.error = null;
       })
