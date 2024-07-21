@@ -55,7 +55,7 @@ export const TodoList = () => {
             ➕Add
           </button>
           {isAddTodo && <TodoAdd />}
-          {console.log(todos)}
+
           {todos.todos?.map((todo: todo, index: number) => (
             <TodoItem key={index} todo={todo} />
           ))}

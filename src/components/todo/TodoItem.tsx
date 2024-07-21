@@ -38,7 +38,7 @@ export const TodoItem: React.FC<{ todo: todo }> = ({ todo }) => {
       }`}
     >
       <div>
-        <ul>
+        <ul className={styles.content}>
           <li className={styles.title}>{todo.title}</li>
           <li className={styles.description}>{todo.description}</li>
         </ul>

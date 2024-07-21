@@ -1,10 +1,31 @@
 .container {
   width: 100%;
-  height: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+@keyframes loading {
+  0% {
+    rotate: 10deg;
+  }
+  50% {
+    rotate: 180deg;
+  }
+
+  100% {
+    rotate: 370deg;
+  }
 }
 
 .loading {
   width: 4rem;
   height: 4rem;
-  border-color: black;
+  border-top: 1rem solid rgba(209, 209, 209, 0.363);
+  border-left: 1rem solid rgb(250, 197, 117);
+  border-right: 1rem solid rgb(250, 197, 117);
+  border-bottom: 1rem solid rgb(250, 197, 117);
+  border-radius: 50px;
+  animation: 1s loading 0.2s infinite;
 }
