@@ -1,6 +1,32 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+}
+
 .title {
   color: #ec3a2a;
   font-weight: 500;
   font-size: 2.3rem;
   cursor: pointer;
+  margin: 0 2rem;
+}
+
+.logout {
+  display: flex;
+  margin: 0 2rem;
+  justify-content: center;
+  padding: 1rem;
+  text-align: center;
+  align-items: center;
+  span {
+    margin: auto 1rem;
+  }
+}
+
+.logout:hover {
+  cursor: pointer;
+  border-radius: 24px;
+  border: none;
+  background-color: rgba(100, 100, 100, 0.048);
+  color: rgb(0, 0, 0);
 }

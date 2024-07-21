@@ -1,3 +1,12 @@
 export const PageNotFound: React.FC = () => {
-  return <div>page Not Found </div>;
+  return (
+    <h1
+      style={{
+        textAlign: "center",
+        marginTop: "15rem",
+      }}
+    >
+      🌳 ❌ Page Not Found :( 🦇
+    </h1>
+  );
 };
